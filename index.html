@@ -386,8 +386,21 @@
                         </li>
                     </ul>
                 </div>
+                <div class="subscribe-container">
+                    <p class="join">Подпишитесь на рассылку</p>
+                    <div class="subscribe-wrapper">
+                        <input class="subscribe-user-email" placeholder="E-mail" type="email" name="subscribe-user-email" />
+                        <button class="subscribe-footer-button">
+                            Подписаться
+                            <svg width="20" height="20" class="subscribe-footer-icon">
+                                <use href="./images/icons.svg#icon-send-subscribe"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </footer>
+        <!-- <div class="backdrop is-hidden" data-modal> -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-close" data-modal-close type="button">
@@ -395,6 +408,64 @@
                         <use href="./images/icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="modal-form">
+                    <div class="modal-field">
+                        <label for="use-name" class="lables">Имя</label>
+                        <div class="input-wrap">
+                            <input id="use-name" class="modal-input" class="modal-input" type="text" name="use-name" required />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="user-phone" class="lables">Телефон</label>
+                        <div class="input-wrap">
+                            <input id="user-phone" class="modal-input" type="tel" name="user-phone" required />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone-modal"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="user-email" class="lables">Почта</label>
+                        <div class="input-wrap">
+                            <input id="user-email" class="modal-input" type="email" name="user-email" />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="text-user-message" class="lables">Комментарий</label>
+                        <textarea
+                            class="comment-text"
+                            name="text-user-message"
+                            placeholder="Введите текст"
+                            id="text-user-message"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <!--  -->
+                    <div class="modal-field-checkbox">
+                        <input class="modal-check visually-hidden" name="policy" id="user-consent" value="false" type="checkbox" />
+                        <label for="user-consent" class="lable-user-consent">
+                            <span>
+                                <svg class="check-icon" width="13" height="10">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю <a class="contractual-terms" href="#" target="_blank">Условия договора</a>
+                        </label>
+                    </div>
+
+                    <button class="send-data" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
