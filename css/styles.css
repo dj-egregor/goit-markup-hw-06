@@ -811,7 +811,7 @@ footer {
     /* margin-bottom: 10px; */
     padding-left: 42px;
     outline: var(--outline);
-    transition: border-color var(--time-to-animate);
+    transition: border-color var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -843,7 +843,7 @@ footer {
     border-radius: 4px;
     resize: none;
     outline: var(--outline);
-    transition: border-color var(--time-to-animate);
+    transition: border-color var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-text:focus {
@@ -904,7 +904,7 @@ footer {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill var(--time-to-animate);
+    transition: fill var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-wrap {
@@ -918,7 +918,7 @@ footer {
 .check-icon {
     /* fill: var(--body-background-color); */
     fill: transparent;
-    transition: fill var(--time-to-animate);
+    transition: fill var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lable-user-consent span {
@@ -930,7 +930,7 @@ footer {
     margin-right: 7px;
     border-radius: 2px;
     border: 2px solid var(--links-text-color-default);
-    transition: background-color var(--time-to-animate), border-color var(--time-to-animate);
+    transition: background-color var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1), border-color var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check:checked + .lable-user-consent span {
@@ -968,7 +968,7 @@ footer {
     background-color: transparent;
     padding-left: 16px;
     padding-right: 16px;
-    transition: border-color var(--time-to-animate);
+    transition: border-color var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
     outline: var(--outline);
 }
 
@@ -1000,7 +1000,7 @@ footer {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--buttons-text-color);
-    transition: background-color var(--time-to-animate);
+    transition: background-color var(--time-to-animate) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-footer-button:hover,
