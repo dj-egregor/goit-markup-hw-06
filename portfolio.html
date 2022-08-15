@@ -20,7 +20,7 @@
     <body>
         <header class="page-header">
             <div class="container header-flex">
-                <a class="weblogo" href="./index.html"> <span class="weblogo-head">Web</span><span>Studio</span> </a>
+                <a class="weblogo" href="./index.html">Web<span class="weblogo-header">Studio</span> </a>
                 <nav class="main-nav">
                     <ul class="main-nav-ul list">
                         <li class="main-nav-item"><a class="main-nav-link" href="./index.html">Студия</a></li>
@@ -221,7 +221,7 @@
         <footer>
             <div class="container footer-flex">
                 <div>
-                    <a class="weblogo-link" href="./index.html"> <span class="weblogo-head">Web</span><span class="weblogo-footer">Studio</span> </a>
+                    <a class="weblogo" href="./index.html">Web<span class="weblogo-footer">Studio</span> </a>
                     <address class="footer-address">
                         <p class="footer-address-text">г. Киев, пр-т Леси Украинки, 26</p>
                         <ul class="list">
@@ -265,15 +265,16 @@
                 </div>
                 <div class="subscribe-container">
                     <p class="join">Подпишитесь на рассылку</p>
-                    <div class="subscribe-wrapper">
-                        <input class="subscribe-user-email" placeholder="E-mail" type="email" name="subscribe-user-email" />
+                    <form class="subscribe-form">
+                        <label class="label-subscribe-user-email visually-hidden" for="subscribe-user-email"></label>
+                        <input id="subscribe-user-email" class="subscribe-user-email" placeholder="E-mail" type="email" name="subscribe-user-email" />
                         <button class="subscribe-footer-button">
                             Подписаться
                             <svg width="20" height="20" class="subscribe-footer-icon">
                                 <use href="./images/icons.svg#icon-send-subscribe"></use>
                             </svg>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </footer>
