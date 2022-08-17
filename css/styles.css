@@ -99,11 +99,17 @@ body {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    /*  */
     text-decoration: none;
+    margin-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    color: var(--weblogo-half-color);
+}
+
+.weblogo-header-padding {
     padding-top: 24px;
     padding-bottom: 24px;
-    color: var(--weblogo-half-color);
+    margin-bottom: 0;
 }
 
 .weblogo-footer,
